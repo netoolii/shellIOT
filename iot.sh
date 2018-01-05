@@ -3,6 +3,7 @@ apt-get remove arduino -y
 apt-get autoremove -y
 apt-get update	
 apt-get install nodejs-legacy -y
+apt-get install npm -y
 npm install node-red -g
 apt-get update
 
