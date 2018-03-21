@@ -1,6 +1,9 @@
 # shellIOT
 
-List of commands to download and install basic programs to init developing Internet Of Things
+List of commands to download and install basic programs to init developing Internet Of Things.
+
+
+Obs: All this programs are open-source, so, enjoy to help the comunity.
 
 ------
 
