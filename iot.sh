@@ -44,8 +44,9 @@ mkdir $HOME/IOT/MQTTspy
 
 ## Download mqttspy
 cd $HOME/IOT/MQTTspy
-wget https://github.com/kamilfb/mqtt-spy/releases/download/mqtt-spy_v0.5.4/mqtt-spy-0.5.4-jar-with-dependencies.jar
-chmod +x $HOME/IOT/MQTTspy/mqtt-spy-0.5.4-jar-with-dependencies.jar
+
+wget https://github.com/eclipse/paho.mqtt-spy/releases/download/1.0.0/mqtt-spy-1.0.0.jar
+chmod +x $HOME/IOT/MQTTspy/mqtt-spy-1.0.0.jar
 
 
 
