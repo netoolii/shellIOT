@@ -46,7 +46,7 @@ sleep 3
 
 sudo npm -g install node-red-contrib-artik 
 sudo npm -g install node-red-contrib-artik-cloud 
-sudo npm -g install node-red-contrib-dashboard
+#sudo npm -g install node-red-contrib-dashboard
 sudo npm -g install node-red-dashboard
 
 
