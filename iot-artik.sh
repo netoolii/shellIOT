@@ -55,9 +55,22 @@ clear
 echo "node-red plugins installed"
 sleep 3
 
+
+#autoremove and update
 sudo apt-get autoclean
 sudo apt-get autoremove
+sudo apt-get update
 
 clear
+echo "last update"
+sleep 2
+
+#install python packages
+
+sudo pip install paho-mqtt
+
+echo " Python packages installed. Testing..."
+sudo python -C "import paho.mqtt.client as mqtt; print('if not error, its ok')"
+sleep 1
 echo "finished"
 sleep 10
