@@ -33,8 +33,9 @@ sudo apt-get install nodejs-legacy -y
 sudo apt-get install npm -y
 sudo apt-get update
 
-sudo npm install -g --unsafe-perm node-red
+
 sudo npm install -g npm@4.x
+sudo npm install -g --unsafe-perm node-red
 sudo npm install -g grunt-cli
 
 
