@@ -28,7 +28,7 @@ sleep 3
 
 
 sudo apt-get update
-sudo apt-get install apititude -y
+sudo apt-get install aptitude -y
 sudo apt-get install nodejs-legacy -y
 sudo apt-get install npm -y
 sudo apt-get update
