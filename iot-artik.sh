@@ -70,7 +70,7 @@ sleep 2
 sudo pip install paho-mqtt
 
 echo " Python packages installed. Testing..."
-sudo python -C "import paho.mqtt.client as mqtt; print('if not error, its ok')"
+sudo python -c "import paho.mqtt.client as mqtt; print('if not error, its ok')"
 sleep 1
 echo "finished"
 sleep 10
