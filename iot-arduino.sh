@@ -1,3 +1,5 @@
+#!/bin/bash
+
 apt-get update
 apt-get remove arduino -y
 apt-get autoremove -y
