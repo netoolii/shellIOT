@@ -56,6 +56,9 @@ sudo add-apt-repository ppa:ubuntu-toolchain-r/test -y
 sudo apt-get update -y
 sudo apt-get upgrade -y
 sudo apt-get dist-upgrade -y
+sudo apt autoclean
+sudo apt autoremove
+sudo apt clean
 
 clear
 echo "All packages are installed"
@@ -73,6 +76,7 @@ if [ "$arch" -eq "armv7l" ]; then
     if [ ! -f /home/ubuntu/tensorflow-1.10.0-cp35-none-linux_armv7l.whl ]; then
 	wget https://github.com/lhelontra/tensorflow-on-arm/releases/download/v1.10.0/tensorflow-1.10.0-cp35-none-linux_armv7l.whl
         pip install tensorflow-1.10.0-cp35-none-linux_armv7l.whl
+        rm tensorflow-1.10.0-cp35-none-linux_armv7l.whl
    fi
 
 fi
@@ -81,14 +85,17 @@ if [ "$arch" -eq "aarch64" ]; then
     if [ ! -f /home/ubuntu/tensorflow-1.10.0-cp35-none-linux_aarch64.whl ]; then
 	wget https://github.com/lhelontra/tensorflow-on-arm/releases/download/v1.10.0/tensorflow-1.10.0-cp35-none-linux_aarch64.whl
         pip install tensorflow-1.10.0-cp35-none-linux_aarch64.whl
+        rm tensorflow-1.10.0-cp35-none-linux_aarch64.whl
    fi
 
 fi
 
 echo " Python packages installed. Testing..."
-sudo python -c "import tensorflow as tf; print(tf.__version__);print('ok')"
+sudo python3 -c "import tensorflow as tf; print(tf.__version__);print('ok')"
 sleep 1
 echo "finished"
+
+rm get-pip.py
 sleep 10
 
 
