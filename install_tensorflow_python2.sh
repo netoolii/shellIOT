@@ -74,7 +74,7 @@ arch=`uname -m`
 
 echo "$arch"
 
-if [ "$arch" -eq "armv7l" ]; then
+if [ "$arch" == "armv7l" ]; then
     if [ ! -f /home/ubuntu/tensorflow-1.10.0-cp27-none-linux_armv7l.whl ]; then
 	wget https://github.com/lhelontra/tensorflow-on-arm/releases/download/v1.10.0/tensorflow-1.10.0-cp27-none-linux_armv7l.whl
         pip install tensorflow-1.10.0-cp27-none-linux_armv7l.whl
@@ -83,7 +83,7 @@ if [ "$arch" -eq "armv7l" ]; then
 
 fi
 
-if [ "$arch" -eq "aarch64" ]; then
+if [ "$arch" == "aarch64" ]; then
     if [ ! -f /home/ubuntu/tensorflow-1.10.0-cp27-none-linux_aarch64.whl ]; then
 	wget https://github.com/lhelontra/tensorflow-on-arm/releases/download/v1.10.0/tensorflow-1.10.0-cp27-none-linux_aarch64.whl
         pip install tensorflow-1.10.0-cp27-none-linux_aarch64.whl
