@@ -23,7 +23,7 @@ sleep 1
 
 #installing python3
 
-sudo apt-get install python-numpy python-pygame python-dev python-pip python-mock python-setuptools python-scipy -y
+sudo apt-get install python-numpy python-pygame python-dev python-pip python-mock python-setuptools python-scipy python-opencv -y
 sudo apt-get update -y
 clear
 
