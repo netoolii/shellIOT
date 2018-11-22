@@ -23,7 +23,7 @@ sleep 1
 
 #installing python3
 
-sudo apt-get install python-numpy python-pygame python-dev python-pip python-mock python-setuptools python-scipy python-opencv -y
+sudo apt-get install python-numpy python-dev python-pip python-mock python-setuptools python-scipy python-opencv -y
 sudo apt-get update -y
 clear
 
@@ -101,7 +101,7 @@ sudo python -c "import tensorflow as tf; print(tf.__version__);print('ok')"
 sleep 1
 echo "finished"
 
-sudo python -c "import pygame"
+sudo python -c "import cv2"
 
 sleep 1
 
