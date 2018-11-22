@@ -44,9 +44,6 @@ fi
 
 pip install setuptools
 pip install wheel
-pip install svgwrite
-
-sudo pip install https://github.com/sightmachine/SimpleCV/zipball/master
 
 
 clear
@@ -108,4 +105,4 @@ sleep 1
 sleep 10
 
 
-df
+df -h
