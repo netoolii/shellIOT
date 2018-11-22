@@ -98,4 +98,4 @@ rm get-pip.py
 sleep 10
 
 
-df
+df -h
