@@ -7,6 +7,7 @@ apt-get update
 apt-get install nodejs-legacy -y
 apt-get install npm -y
 npm install node-red -g
+npm install node-red-dashboard
 apt-get update
 
 clear
